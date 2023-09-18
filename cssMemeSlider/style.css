@@ -50,6 +50,8 @@
     width: 400%;
     height: 100%;
     display: flex;
+
+    transition: 0.5s;
   }
 
   .slider-item {
@@ -75,6 +77,7 @@
     width: 400%;
 
     color: white;
+    transition: 0.5s;
   }
 
   .text {
