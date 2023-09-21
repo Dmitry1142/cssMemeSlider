@@ -52,6 +52,9 @@
     display: flex;
 
     transition: 0.5s;
+
+    justify-content: center;
+    align-items: center;
   }
 
   .slider-item {
@@ -114,7 +117,7 @@
     background-color: #fff;
   }
 
-  .label div:checked {
+  .dot:checked {
     background-color: transparent;
   }
 
@@ -150,6 +153,14 @@
   #memas4:checked ~ .slider-container .label-wrapper label:nth-child(4) div {
     background-color: transparent;
     border: 0.1em solid #285780;
+  }
+
+  #memas1:checked ~ .slider-container .label-wrapper label:nth-child(1) div:hover, 
+  #memas2:checked ~ .slider-container .label-wrapper label:nth-child(2) div:hover, 
+  #memas3:checked ~ .slider-container .label-wrapper label:nth-child(3) div:hover, 
+  #memas4:checked ~ .slider-container .label-wrapper label:nth-child(4) div:hover {
+    background-color: transparent;
+    border: 0.1em solid #fff;
   }
 
   @media (max-width: 1225px) {
